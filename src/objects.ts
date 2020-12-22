@@ -34,7 +34,8 @@
       },
       "properties": {
         "id": "100",
-        "name": "Devines-tu"
+        "name": "Devines-tu",
+        "height": 4
       }
     },
     {
@@ -387,7 +388,8 @@
       },
       "properties": {
         "id": "200",
-        "name": "ce que je peux"
+        "name": "ce que je peux",
+        "height": 2
       }
     },
     {
@@ -500,7 +502,8 @@
       },
       "properties": {
         "id": "300",
-        "name": "démarrer ?"
+        "name": "démarrer ?",
+        "height": 4
       }
     }
   ]

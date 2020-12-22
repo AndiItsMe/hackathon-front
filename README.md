@@ -1,33 +1,113 @@
-# `ge-hackathon`
+# Hackathon Front End
 
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
+<br />
 
-For more information, go to https://aurelia.io/docs/cli/webpack
+## 1. Pré-requis pour l'exercice
 
-## Run dev app
+  - Installation de NodeJS (node 10.15+ / npm 6.4+)
+  - Installation de Aurelia CLI : [ Aurelia cli v1.3.1+](https://aurelia.io/docs/cli/basics#introduction)
+  - Navigateur (Chromium)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - Git [git-scm.com](https://git-scm.com/downloads)
 
-Run `npm start`, then open `http://localhost:8080`
 
-You can change the standard webpack configurations from CLI easily with something like this: `npm start -- --open --port 8888`. However, it is better to change the respective npm scripts or `webpack.config.js` with these options, as per your need.
 
-To enable Webpack Bundle Analyzer, do `npm run analyze` (production build).
+## 2. Documentation générale
+- Documentation Aurelia : [aurelia.io/docs](https://aurelia.io/docs)
+- Aurelia UX package : [aurelia-ux](https://github.com/aurelia/ux)
 
-To enable hot module reload, do `npm start -- --hmr`.
 
-To change dev server port, do `npm start -- --port 8888`.
+## 3. Etapes d'initialisation
 
-To change dev server host, do `npm start -- --host 127.0.0.1`
+1. Clone repos
+2. Installation package : `npm install`
+3. Test de démarrage : `npm start`
+4. Ouvrir nav. `http://localhost:8080` (le port peut être variable)
 
-**PS:** You could mix all the flags as well, `npm start -- --host 127.0.0.1 --port 7070 --open --hmr`
 
-For long time aurelia-cli user, you can still use `au run` with those arguments like `au run --env prod --open --hmr`. But `au run` now simply executes `npm start` command.
+---
 
-## Build for production
+<br />
+<br />
 
-Run `npm run build`, or the old way `au build --env prod`.
+## 4. Hack #1
 
-## Unit tests
+### > Objectif
+Montrer son talent dans le manièment des objets HTML, CSS avec Aurelia.io
 
-Run `au test` (or `au jest`).
+Le plus important, c'est d'appliquer le rêgle responsives et l'écriture CSS basés sur les conventions BEM.
 
-To run in watch mode, `au test --watch` or `au jest --watch`.
+Les couleurs et dimmension des textes, objets ne doivent pas être exact pour la réussite de l'exerice.
+
+
+### > Capture de l'exercice
+<br />
+
+![cards](images/cards.jpg)
+
+<br />
+
+### > Etapes
+
+
+L'entier de l'exerice sera écrit dans `src/app.html, app.ts, app.css`.
+
+1. Créer un Titre (h1) en orange dans une section, comportant la variable `message`
+2. dans `app.ts` définir la variable `message` avec la propriété `name` du document `objects.ts`
+3. Charger dans une variable de tableau les objets `features` du document `objects.ts`
+4. Créer un élément `ux-card` pour chaque `features` dans `app.html`
+5. Dans chaque `ux-card` charger la valeur de `feature.properties.name` , `feature.geometry.type` et le nombre de coordonnées `feature.geometry.coordinates`
+6. Créer un fichier CSS `app.css` et le mettre en référence dans `app.html`
+7. Ajouter dans le CSS les styles du texte, dégradé et couleurs
+8. Ajouter les règles permettant aux cards d'ètre responsive.
+
+
+<br />
+
+![cards](images/cards.gif)
+
+<br />
+<br />
+<br />
+
+---
+
+
+## 5. Hack #2
+
+### > Objectif
+Montrer tes talents avec Three.js !
+
+### > Capture de l'exercice
+
+![key](images/key.jpg)
+
+<br />
+
+### > Etapes
+
+
+L'entier de l'exerice sera écrit dans `src/app.html, app.ts, app.css`.
+
+
+1. Installation du [package ThreeJS](https://threejs.org/)
+2. Intégration du module dans la page `/src/app`
+3. Création d'une forme extrudée de chaque objet `feature` en utilisant les coordonnées dans `feature.geometry.coordinates` du fichier `src/objects.json` avec la hauteur d'extrusion selon la clé `feature.properties.height`
+4. Import et activer le controle `OrbitControls`
+5. Déplacer et mettre à l'echelle les objets pour les voir à l'écran.
+
+
+<br />
+
+![key](images/key.gif)
+
+<br />
+
+
+## 6. Hack #3 **bonus**
+
+Question : Trouver ce que la clé peux démarrer ?
+
+Indice : La réponse se trouve au centre de la croix rouge !
+
+

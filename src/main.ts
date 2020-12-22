@@ -27,6 +27,7 @@ export interface Geometry {
 export interface Properties {
   id: string;
   name: string;
+  height: number;
 }
 
 export interface Feature {
