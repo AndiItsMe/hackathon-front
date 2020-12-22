@@ -15,3 +15,31 @@ export function configure(aurelia: Aurelia) {
 
   aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 }
+
+
+
+
+export interface Geometry {
+  type: string;
+  coordinates: number[][];
+}
+
+export interface Properties {
+  id: string;
+  name: string;
+}
+
+export interface Feature {
+  type: string;
+  id: number;
+  geometry: Geometry;
+  properties: Properties;
+}
+
+export interface geojson {
+  type: string;
+  crs: string;
+  name: string;
+  exceededTransferLimit: boolean;
+  features: Feature[];
+}

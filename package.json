@@ -8,8 +8,12 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@aurelia-ux/card": "^0.25.0",
+    "@aurelia-ux/core": "^0.25.0",
+    "@aurelia-ux/input": "^0.25.0",
+    "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.2",
-    "aurelia-animator-css": "^1.0.4"
+    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "aurelia-cli": "^1.2.3",
