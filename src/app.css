@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+html{
+  background: linear-gradient(to right, purple, rgb(228, 29, 95));
+}
+
+.block{
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex__cards{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1rem;
+  flex-grow: 1;
+  margin: 1rem;
+  background-color: cornflowerblue;
+}
+
+.card__title {
+  color: lightcyan;
+}
+
+.card__body {
+  color: aliceblue;
+}
+
+.title{
+  color: darkorange;
+  text-align: center;
+}
